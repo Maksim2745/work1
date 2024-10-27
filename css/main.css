@@ -60,4 +60,14 @@
   .list-item__description{
     font-size: 16px;
     font-weight: 400;
+
   }
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    column-gap: 12px;
+    }
+  .section__title{
+    column-gap: 12px;
+  }
+ 
