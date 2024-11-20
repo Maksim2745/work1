@@ -1,69 +1,133 @@
-.pt-serif-regular {
-    font-family: "PT Serif", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .pt-serif-regular-italic {
-    font-family: "PT Serif", serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .pt-serif-bold {
-    font-family: "PT Serif", serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .pt-serif-bold-italic {
-    font-family: "PT Serif", serif;
-    font-weight: 700;
-    font-style: italic;
-  }
-  *{
-    font-family: "PT Serif", serif;
-    font-weight: 600;
-    font-style: normal;
-  }
-  .container{
-    max-width: 865px;
-    margin: 0 auto
-  }
-  .intro {
-    margin-top: 120px;
-    display:flex ;
-    justify-content:space-between ;
-  }
-  .intro__title{
-    font-size: 48px;
-  }
-  .intro__img{
-    width: 300px;
-    border-radius: 50%;
-  }
-    .about{}
-  .about__title{
-    font-size: 32px;
-    font-style: italic;
-  }
-  .about__list{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  .list-item {
-  }
-  .list-item__title{
-    font-size: 32px;
-  }
-  .list-item__description{
-    font-size: 16px;
-    font-weight: 400;
+body {
+  background-color:#1E1E1E;
+  color:white;
+}
 
-  }
-  .contacts {
-    display: flex;
-    flex-direction: column;
-    column-gap: 12px;
-    }
+.container {
+  display: flex;
+  gap: 76px;
+  max-width: 1060px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 54px;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight:  600;
+}
+
+p {
+  font-size: 14px;
+}
+
+span {
+  font-size: 8px;
+}
+
+/* стили для левого блока */
+
+.portfolio {
+  display: flex;
+  flex-direction:column;
+  gap: 103px;
+  font-family: "Sour Gummy", serif;
+  width: 50%;
+}
+
+
+.portfolio__description {
+  display: flex;
+  flex-direction:column;
+  gap: 64px;
+}
+
+.portfolio__list{
+  display:flex;
+  flex-direction:column;
+  gap: 27px;
+}
+
+.portfolio__list-item__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.portfolio__list-item {
+  display: flex;
+  align-items: center;
+  max-width:max-content;
+  border-radius: 50px;
+  padding: 4px;
+  padding-right: 16px;
+  background-color: gray;
+  gap: 8px;
+}
+
+.portfolio__figma{
+  display: flex;
+  max-width: max-content;
+  align-items: center;
+  padding: 15px 32px;
+  border-radius: 50px;
+  background-color: rgb(44, 43, 43);
+  gap: 28px;
+}
+
+
+/* Правая секция */
+
+
+
+.gallery{
+  width: 50%;
+  background-color: black;
+  padding: 124px 76px;
+  display: flex;
+  flex-direction: column;
+  gap: 140px;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 2%;
+}
+
+.gallery__description {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  text-transform: uppercase;
+  text-wrap: nowrap;
+}
+
+.gallery__content{
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.gallery__content-img{
+  display: flex;
+  gap: 15px;
+}
+
+.gallery__content-img__item{
+  max-width: 200px;
+}
