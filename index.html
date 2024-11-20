@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,34 +9,55 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <section class="intro">
-            <h1 class="intro__title"> Привет! <br/> Меня зовут Максим Лебедь</h1>
-            <img class="intro__img" src="https://i.pinimg.com/236x/a4/c4/ea/a4c4ea56157343ff8898d6a169e9e76c.jpg" alt="фотография">
-        </section> 
-        <section class="about">
-            <h2 class="about__title">Frontend</h2>
-            <ul class="about__list">
-                <li class="about__list-item list-item">
-                    <h3 class="list-item__title">О себе</h3>
-                    <p class="list-item__description">Люблю смотреть фильмы, играть в компьютерные игры, любимая игра-это фифа всё </p>
-                </li>
-                <li class="about__list-item list-item">
-                    <h3 class="list-item__title">Навыки</h3>
-                    <p class="list-item__description">Умею работать Python 🐍, CSS, HTML </p>
-                </li>
-                <li class="about__list-item list-item">
-                    <h3 class="list-item__title">Образование</h3>
-                    <p class="list-item__description">Неполное среднее образование </p>
-                </li>
-            </ul>
+        <section class="portfolio">
+        <div class="portfolio__description">
+            <h1>Portfolio</h1>
+            <h3>Gallery Portfolio Website</h3>
+        </div>
+        <ul class="portfolio__list">
+            <li class="portfolio__list-item">
+                <div class="portfolio__list-item__img">
+                    <img src="./img/daw.png" alt="daw">
+                </div>
+                <h4>Clean & Modern Design</h4>
+            </li>
+            <li class="portfolio__list-item">
+                <div class="portfolio__list-item__img">
+                    <img src="./img/layers.png" alt="theme">
+                </div>
+                <h4>Light and Dark Version</h4>
+            </li>
+            <li class="portfolio__list-item">
+                <div class="portfolio__list-item__img">
+                    <img src="./img/font.png" alt="font">
+                </div>
+                <h4>Free Google Font</h4>
+            </li>
+        </ul>
+        <div class="portfolio__figma">
+            <img src="./img/figma.png" alt="Figma">
+            <h4>Figma</h4>
+        </div>
         </section>
-        <section class="contacts">
-            <h2 >Контакты</h2>
-            <a href="https://vk.com/id654162701" class="contacts__link" > вк</a>
-            <a href="tel:79166186352"class="contacts__title">+79166186352</a>
+        <section class="gallery">
+            <div class="gallery__description">
+                <h2>Darriel kova</h1>
+                <span>filmmaker photographer & creative director</span>
+            </div>
+            <div class="gallery__content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis aperiam repudiandae libero, officia placeat, architecto doloremque quo exercitationem consequuntur similique voluptates, voluptatum voluptatibus error deleniti qui assumenda molestias suscipit nihil.</p>
+                <div class="gallery__content-img">
+                    <img class="gallery__content-img__item" src="./img/orig.webp" alt="euro">
+                    <img class="gallery__content-img__item" src="./img/spb1.jpeg" alt="spb1">
+                </div>
+            </div>
+
         </section>
     </div>
 </body>
