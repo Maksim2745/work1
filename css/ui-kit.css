@@ -1,0 +1,61 @@
+:root {
+    --primary-c:#FFFFFF;
+    --secondary-c:#191919;
+    --tertiary-c:#000000;
+    --accent-c:#118DA8;
+}
+
+body {
+    background-color: var(--secondary-c);
+}
+
+* {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+    color: var(--primary-c);
+}
+
+
+h1 {
+   font-weight: 400;
+   font-size: 70px;
+   line-height: 80px;
+   letter-spacing: 3.2px;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 79px;
+    letter-spacing: 2.88px;
+}
+
+h6 {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+}
+
+span {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.ui-link {
+    transition: 0.2s;
+}
+
+.ui-link:hover{
+    color: var(--accent-c);
+}
+
+.ui-button{
+    background-color: var(--accent-c);
+    padding: 12px 20px ;
+    border-radius: 6px;
+    height: 51px;
+    max-width: max-content;
+}

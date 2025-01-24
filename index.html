@@ -8,57 +8,130 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <section class="portfolio">
-        <div class="portfolio__description">
-            <h1>Portfolio</h1>
-            <h3>Gallery Portfolio Website</h3>
-        </div>
-        <ul class="portfolio__list">
-            <li class="portfolio__list-item">
-                <div class="portfolio__list-item__img">
-                    <img src="./img/daw.png" alt="daw">
-                </div>
-                <h4>Clean & Modern Design</h4>
-            </li>
-            <li class="portfolio__list-item">
-                <div class="portfolio__list-item__img">
-                    <img src="./img/layers.png" alt="theme">
-                </div>
-                <h4>Light and Dark Version</h4>
-            </li>
-            <li class="portfolio__list-item">
-                <div class="portfolio__list-item__img">
-                    <img src="./img/font.png" alt="font">
-                </div>
-                <h4>Free Google Font</h4>
-            </li>
-        </ul>
-        <div class="portfolio__figma">
-            <img src="./img/figma.png" alt="Figma">
-            <h4>Figma</h4>
-        </div>
-        </section>
-        <section class="gallery">
-            <div class="gallery__description">
-                <h2>Darriel kova</h1>
-                <span>filmmaker photographer & creative director</span>
+    <header class="header">
+        <a href="/"><img src="./img/logo.svg" alt="Castaway"></a>
+        <nav class="header__nav nav">
+            <ul class="nav__list">
+                <li class="nav__list-item">
+                    <a class="ui-link" href="#home">Home</a>
+                </li>
+                <li class="nav__list-item">
+                    <a class="ui-link" href="#episodes">Episodes</a>
+                </li>
+                <li class="nav__list-item">
+                    <a class="ui-link" href="#about">About</a>
+                </li>
+                <li class="nav__list-item">
+                    <a class="ui-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="promo">
+            <div class="promo-img__wrapper">
+                <img class="promo-img" src="./img/promo.jpg" alt="promo">
             </div>
-            <div class="gallery__content">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis aperiam repudiandae libero, officia placeat, architecto doloremque quo exercitationem consequuntur similique voluptates, voluptatum voluptatibus error deleniti qui assumenda molestias suscipit nihil.</p>
-                <div class="gallery__content-img">
-                    <img class="gallery__content-img__item" src="./img/orig.webp" alt="euro">
-                    <img class="gallery__content-img__item" src="./img/spb1.jpeg" alt="spb1">
+            <div class="promo-text">
+                <h1>Take your podcast to the <span class="promo-text__next"> next </span> level</h1>
+                <div class="promo-text__listen">
+                    <p>Listen on</p>
+                    <ul class="promo-text__listen-list listen-list"> 
+                        <li class="listen-list__item">
+                            <a href=""><img src="./img/spotifay.svg" alt="spotifay"></a>
+                        </li>
+                        <li class="listen-list__item">
+                            <a href="#"><img src="./img/music.svg" alt="music"></a>
+                        </li>
+                        <li class="listen-list__item">
+                            <a href="#"><img src="./img/oblako0.svg" alt="oblako"></a>
+                        </li>
+                        <li class="listen-list__item">
+                            <a href="#"><img src="img/micro.svg" alt="micro"></a>
+                        </li>
+                        <li class="listen-list__item">
+                            <a href="#"><img src="img/stan.svg" alt="stan"></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-
-        </section>
+         </section>
+         <section class="episodes">
+            <div class="episodes-info">
+                <h2>Latest episodes</h2>
+                <button class="ui-button" type="button">View all episodes</button>
+            </div>
+                <ul class="episodes-cards">
+                    <li class="episodes-cards__card episodes-card">
+                        <img class="" src="./img/zvuk.jpg" alt="zvuk">
+                        <div class="episodes-card__content">
+                            <span class="episodes-card__content-tag">Gear</span>
+                            <div class="episodes-card__content-info">
+                                <span class="episodes-card__content-info-episode">Episode 3</span> 
+                                <h2>Should you get outboard audio gear?</h2>
+                                <p class="episodes-card__content-info-description">Is hardware really worth it when it comes to podcasting? The answer is...it depends. Here’s our reasons on why you might want to consider picking something up.</p>
+                                <button class="ui-button" type="button">View Episode Details</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="episodes-cards__card episodes-card">
+                        <img class="" src="./img/microphone.jpg" alt="microphone">
+                        <div class="episodes-card__content">
+                            <span class="episodes-card__content-tag">Tips & Tricks</span>
+                            <div class="episodes-card__content-info">
+                                <span class="episodes-card__content-info-episode">Episode 2</span> 
+                                <h2>Mic tricks to take you to the next level</h2>
+                                <p class="episodes-card__content-info-description">Stop rolling with those default settings on your mic. These small tweaks will take you from sounding good to great.</p>
+                                <button class="ui-button" type="button">View Episode Details</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="episodes-cards__card episodes-card">
+                        <img class="" src="./img/microphone-guy.jpg" alt="microphone-guy">
+                        <div class="episodes-card__content">
+                            <span class="episodes-card__content-tag">Gear</span>
+                            <div class="episodes-card__content-info">
+                                <span class="episodes-card__content-info-episode">Episode 1</span> 
+                                <h2>The best microphone under $200</h2>
+                                <p class="episodes-card__content-info-description">With so many microphones on the market, how are you supposed to know what’s the best? Take a look at our top picks.</p>
+                                <button class="ui-button" type="button">View Episode Details</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+         </section>
+         <section class="about">
+            <div class="about-info">
+                <div class="about-info__img"></div>  
+                <span class="about-info__span">Meet your host</span>
+                <h2>Jacob Paulaner</h2>
+                <p class="about-info__description">Jacob has a background in audio engineering, and has been podcasting since the early days.</p>
+                <p class="about-info__description">He’s here to help you level up your game by sharing everything he’s learned along the way.</p>
+            </div>
+            <img class="about-img" src="./img/Jacob-Paulaner.jpg" alt="Jacob-Paulaner">
+         </section>
+         <section class="form-section">
+            <div class="form-wrapper">
+                <div class="form-wrapper__inner">
+                    <span class="form-wrapper__inner-span">Email Newsletter</span>
+                    <h2 class="form-wrapper__inner-h2">Subscribe for updates</h2>
+                </div>
+                <form class="form">
+                    <input class="form__input" type="text" placeholder="Name">
+                    <input class="form__input" type="email" placeholder="Email">
+                    <button class="form__button ui-button" type="submit">Submit</button>
+                </form>
+            </div>
+         </section>
+    </main>
+    <footer>
+    </footer>
     </div>
 </body>
-</html>
+</html><style>
+
+</style>
