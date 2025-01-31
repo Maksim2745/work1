@@ -63,8 +63,8 @@
 .promo-text__next::after{
   content: url("../img/big-lines.svg");
   position: absolute;
-  top: 0;
-  left: 0;
+  left:-8px;
+  bottom: -15px;
 }
 
 .promo-text__listen {
@@ -249,4 +249,34 @@
 
 .form-wrapper__inner-h2{
   font-size: 72px;
+}
+
+.reviews {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  grid-auto-flow: dense;
+}
+.reviews-social {
+  
+}
+.reviews-social__card{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--tertiary-c);
+  padding: 54px 50px ;
+  border-radius: 32px;
+  gap: 20px;
+  
+}
+
+.reviews-social__card-title{
+  font-size: 36px;
+  line-height: 43px;
+  max-width: 313px;
+}
+
+.reviews-social__description {
+  color: var(--primary-c);
+  opacity: 70%;
 }
