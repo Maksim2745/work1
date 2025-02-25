@@ -14,6 +14,10 @@
   align-items: center;
 }
 
+.header__nav{
+  display: block;
+}
+
 .nav__list {
   display: flex;
   align-items: center;
@@ -260,6 +264,13 @@
 .reviews-social {
   
 }
+
+.star-list{
+  display:inline-flex;
+  align-items:center;
+  line-height:7px;
+}
+
 .reviews-social__card{
   display: flex;
   flex-direction: column;
@@ -279,4 +290,104 @@
 .reviews-social__description {
   color: var(--primary-c);
   opacity: 70%;
+}
+
+/* секция footer */
+
+
+.footer{
+  
+}
+
+.burger {
+  display: none;
+}
+
+.nav__lists{
+  display: flex;
+  align-items: center;
+}
+
+
+
+.cubes {
+  margin-top: 10px;
+  width: 300px;
+  height: 300px;
+}
+
+.cubes__wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding-top: 90px;
+}
+.applications{
+}
+
+
+/* Адаптив для страницы  */
+@media (max-width: 1280px) {
+  .cubes__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .cubes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cubes--column{
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  h1, .promo-text__next, h2 {
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: 1px;
+  } 
+  .promo {
+    flex-direction: column;
+  }
+  .episodes-card {
+    flex-direction: column;
+  }
+  .promo-text__next::after {
+    display: none;
+  }
+  .about {
+    flex-direction: column-reverse;
+    gap: 24px;
+  }
+  .form-wrapper{
+    flex-direction: column;
+  }
+  .form__input{
+    font-size: 18px;
+  }
+  .form-wrapper__inner-h2 {
+    font-size: 30px;
+  }
+  .reviews {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .cubes__wrapper{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .burger {
+    display: block;
+  }
+  .header__nav{
+    display: none;
+  }
+  .promo{
+    gap: 30px;
+  }
 }
